@@ -1,0 +1,9 @@
+server:
+ port: 7070
+ 
+file:
+ default: C:/upload
+ text: C:/upload/text/
+ image: C:/upload/image/
+ video: C:/upload/video/
+ 
