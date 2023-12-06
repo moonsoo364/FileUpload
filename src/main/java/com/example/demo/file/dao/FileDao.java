@@ -28,13 +28,14 @@ public class FileDao {
 	@Value("${file.video}")
 	private String videoDir;
 	
+	
 	public String getDirectory(FileType fileType) {
 		switch(fileType) {
 		case TEXT: return this.textDir;
 		case IMAGE: return this.imageDir;
 		case VIDEO: return this.videoDir;
 		default: return "Not Found";
-	}
+		}
 	}
 
 	public void uploadFile(UploadFileDto param) {

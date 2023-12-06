@@ -24,6 +24,7 @@ public class FileController {
 	@Autowired
 	private FileService fileService;
 	
+	
 	@PostMapping("/{fileType}")
 	public void uploadFile(@RequestPart(name = "file") MultipartFile file, @PathVariable(name = "fileType")FileType fileType) {
 		fileService.uploadFile(new UploadFileDto(file,fileType));
@@ -32,5 +33,9 @@ public class FileController {
 	@GetMapping("/path")
 	public String getPath(@RequestParam(name = "fileType",required = true) FileType fileType) {
 		return fileService.getFileDirectory(fileType);
+	}
+	@GetMapping("/info")
+	public void getInfo() {
+		fileService.getInfo();
 	}
 }

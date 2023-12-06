@@ -7,3 +7,19 @@ file:
  image: C:/upload/image/
  video: C:/upload/video/
  
+ 
+jasypt:
+ encryptor:
+  bean: jasyptEncryptor
+ 
+ 
+s3:
+ bucket: ENC(5OKyedvYAhixX0ruXvQUQI8lErcYk+4TsDF7mIM+2eVCFMzhJe8nmQ==)
+ region: ENC(tFRWwrtdLopuOJnBq488fw6HwxcUgz9kJyVDJlQBKkQ=)
+ credentials: 
+  accessKey: ENC(wWZnZpR+t6N4dai8cDKRTE+sbn8aUFsePApvquZIP+Z6Junu9OOaOA==)
+  secretKey: ENC(frLZlUr3yMhU16SLEMzSljTYFjzC2LRwoH+ddeG8Bv+JLj7dVFf8AVgskXW9bj+Oxo248JB3BpIN1b0VlctIWA==)
+  
+   
+   
+ 
